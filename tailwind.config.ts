@@ -21,6 +21,13 @@ const config: Config = {
         dspDarkGreen: "#248B0F",
         dspBlack: "#1E1E1E",
       },
+      backgroundImage: {
+        bgGradientOrange: "url('/bg-gradient-orange.svg')"
+      },
+      boxShadow: {
+        softShadow: "rgba(149, 157, 165, 0.4) 0px 4px 24px;",
+        darkShadow: "rgba(149, 157, 165, 0.8) 0px 4px 24px;",
+      }
     },
   },
   plugins: [],
