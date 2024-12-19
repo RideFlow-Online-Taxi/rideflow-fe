@@ -10,7 +10,7 @@ const order = () => {
     setActiveButton(button);
   };
   return (
-    <div className="">
+    <div className="w-full max-w-lg">
       <div className="p-4 border-b-[1px] border-dspGray border-opacity-20">
         <h1 className="font-extrabold text-[20px]">Order List</h1>
       </div>

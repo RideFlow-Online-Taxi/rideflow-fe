@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/sheet";
 import { XIcon } from "lucide-react";
 import vehicleHistoryDetailLogo from '@/public/vehicleHistory.png'
+import BgGradientOrange from "@/components/BgGradientOrange";
 
 const HistoryCard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,14 +29,16 @@ const HistoryCard = () => {
       <div className="flex flex-col gap-1">
         <h2 className="font-semibold text-[12px] text-dspGray">Today, 10.50</h2>
         <div className="flex items-center gap-4 justify-between">
-          <Image src={vehicleLogo} alt="logo" width={82} height={112} />
-          <div className="flex flex-col gap-1">
-            <h3 className="font-bold text-base truncate max-w-[150px]">
-              Mega Mall Center
-            </h3>
-            <p className="font-medium text-sm text-dspGray overflow-hidden text-ellipsis whitespace-nowrap max-w-[120px]">
-              Jl. Cik Ditiro, Batam Maria aku mamama
-            </p>
+          <div className="flex items-center gap-4">
+            <div className="h-12 w-16">
+              <Image src={vehicleLogo} alt="logo" className="w-full h-full" />
+            </div>
+            <div className="flex flex-col gap-1">
+              <h3 className="font-bold text-base">Mega Mall Center</h3>
+              <p className="font-medium text-sm text-dspGray line-clamp-1">
+                Jl. Cik Ditiro, Batam Maria aku mamama
+              </p>
+            </div>
           </div>
           <Button
             className="text-white rounded-2xl bg-dspOrange border-2 border-dspLightGray"
@@ -49,18 +52,19 @@ const HistoryCard = () => {
         <SheetTitle></SheetTitle>
         <SheetContent
           side="bottom"
-          className="h-screen w-screen max-w-full max-h-full [&>button]:hidden p-0"
+          className="h-full w-full max-h-full flex [&>button]:hidden p-0 justify-center justify-items-center bg-transparent"
           onEscapeKeyDown={(e) => e.preventDefault()}
           onPointerDownOutside={(e) => e.preventDefault()}
         >
-          <XIcon
-            size={30}
-            className="absolute top-3 left-4 z-10"
-            onClick={closeDrawer}
-          />
           {/* Drawer Content */}
-          <div className="bg-gradient-to-b from-[#F5D8AC] to-[#FFAE33] w-full h-1/2  rounded-b-[32px] relative z-0 p-5 ">
-            <div className="bg-white shadow-md rounded-xl absolute bottom-[30%] translate-y-3/4 justify-center right-1/2 translate-x-1/2 w-5/6 p-5">
+          <div className="bg-white max-w-lg  w-full h-full  rounded-b-[32px] relative">
+            <BgGradientOrange className="absolute" />
+            <XIcon
+              size={30}
+              className="absolute top-3 left-4 z-10"
+              onClick={closeDrawer}
+            />
+            <div className="bg-white shadow-md rounded-xl absolute bottom-[70%] translate-y-3/4 justify-center right-1/2 translate-x-1/2 w-5/6 p-5">
               <div className="flex flex-col justify-center gap-2 border-b-[3px] border-gray-200 border-dashed py-2">
                 <div className="justify-items-center">
                   <Image

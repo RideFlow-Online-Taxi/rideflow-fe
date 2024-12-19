@@ -62,7 +62,7 @@ const UpdatedRegisterForm = () => {
             <Label htmlFor="name" className="font-semibold text-[12px]">
               Name<span className="text-red-600 pl-1">*</span>
             </Label>
-            <Input className="border-t-0 border-l-0 border-r-0 bg-transparent border-dspGray rounded-none focus:border-none focus-visible:ring-2 focus-visible:ring-dspOrange focus-visible:rounded-sm" />
+            <input className="border-t-0 border-l-0 border-r-0 bg-transparent border-b-2 border-opacity-40 py-2 border-dspGray rounded-none focus:border-none focus-visible:ring-2 focus:ring-dspOrange focus-visible:rounded-sm pl-2" />
           </div>
           <div className="">
             <Label htmlFor="phoneNumber" className="font-semibold text-[12px]">
@@ -93,10 +93,7 @@ const UpdatedRegisterForm = () => {
             <Label htmlFor="name" className="font-semibold text-[12px]">
               Email<span className="text-red-600 pl-1">*</span>
             </Label>
-            <Input
-              type="email"
-              className="border-t-0 border-l-0 border-r-0 bg-transparent border-dspGray rounded-none focus:border-none focus-visible:ring-2 focus-visible:ring-dspOrange focus-visible:rounded-sm"
-            />
+            <input className="border-t-0 border-l-0 border-r-0 bg-transparent border-b-2 border-opacity-40 py-2 border-dspGray rounded-none focus:border-none focus-visible:ring-2 focus:ring-dspOrange focus-visible:rounded-sm pl-2" />
           </div>
 
           <div className=" flex items-center gap-8 ">
@@ -104,19 +101,14 @@ const UpdatedRegisterForm = () => {
               <Label htmlFor="name" className="font-semibold text-[12px]">
                 Vehicle Type<span className="text-red-600 pl-1">*</span>
               </Label>
-              <Input
-                type="text"
-                className="border-t-0 border-l-0 border-r-0 bg-transparent border-dspGray rounded-none focus:border-none focus-visible:ring-2 focus-visible:ring-dspOrange focus-visible:rounded-sm"
-              />
+              <input className="border-t-0 border-l-0 border-r-0 bg-transparent border-b-2 border-opacity-40 py-2 border-dspGray rounded-none focus:border-none focus-visible:ring-2 focus:ring-dspOrange focus-visible:rounded-sm pl-2" />
             </div>
             <div className="flex flex-col gap-1">
               <Label htmlFor="name" className="font-semibold text-[12px]">
                 Plat Number<span className="text-red-600 pl-1">*</span>
               </Label>
-              <Input
-                type="text"
-                className="border-t-0 border-l-0 border-r-0 bg-transparent border-dspGray rounded-none focus:border-none focus-visible:ring-2 focus-visible:ring-dspOrange focus-visible:rounded-sm"
-              />
+              <input className="border-t-0 border-l-0 border-r-0 bg-transparent border-b-2 border-opacity-40 py-2 border-dspGray rounded-none focus:border-none focus-visible:ring-2 focus:ring-dspOrange focus-visible:rounded-sm pl-2" />
+              
             </div>
           </div>
           <div className=" grid grid-cols-2 gap-8 ">

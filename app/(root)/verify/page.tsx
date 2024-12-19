@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/button';
 
 const verify = () => {
   return (
-    <div className="p-10">
-      <div className="py-10 justify-center justify-items-center">
-        <Image src={driverPic} alt="logo" width={600} height={400} />
+    <div className="px-10 py-2">
+      <div className="py-10 justify-center justify-items-center w-full">
+        <Image src={driverPic} alt="logo" className=' w-96 h-96 object-contain' />
       </div>
       <div className="text-center flex justify-center flex-col gap-8">
         <div className="flex flex-col gap-2">

@@ -9,7 +9,7 @@ export default function DriverLayout({
       <div>
         <div className="flex flex-col items-center w-full">
           {children}
-          <NavbarDriver />
+          {/* <NavbarDriver /> */}
         </div>
       </div>
     );
